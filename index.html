@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav id="navbar" class="nav-bar">
+    <img src="./assets/images/logo.svg" />
+    <div id="mySidenav" class="nav-bar-links">
+      <a id="closebtn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul id="nav-menu" class="nav-menu">
+        <li class="item"><a class="nav-link" href="#">Home</a></li>
+        <li class="item"><a class="nav-link" href="#">New</a></li>  
+        <li class="item"><a class="nav-link" href="#">Popular</a></li>
+        <li class="item"><a class="nav-link" href="#">Trending</a></li>
+        <li class="item"><a class="nav-link" href="#">Categories</a></li>
+      </ul>
+    </div>
+    <div class="burgger-menu">
+        <a><img  class="menub" src="./assets/images/icon-menu.svg" alt="" onclick="openNav()"></a>
+    </div>
+  </nav>
+  <main class="main-grid">
+    <article class="f-grid web-3-image">
+      <img class="web-3-desk" src="./assets/images/image-web-3-desktop.jpg" alt="">
+      <img class="web-3-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="">
+    </article>
+    <article class="f-grid title">
+      <h1><strong>The Bright Future of Web 3.0?</strong></h1>
+    </article>
+    <article class="f-grid information">
+    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    But is it really fulfilling its promise?</p>
+
+    <button class="btn-read-more">READ MORE</button>
+    </article>
+    <article class="f-grid new-news">
+      <section>
+      <h3>New</h3> 
+
+      <h4>Hydrogen VS Electric Cars</h4>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <hr>
+      <h4>The Downsides of AI Artistry</h4>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      <hr>
+      <h4>Is VC Funding Drying Up?</h4>
+      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </section>
+  </article>
+  <article class="f-grid list-grid item1">
+    <img src="./assets/images/image-retro-pcs.jpg" alt="">
+    <div class="description">
+      <h2>01</h2>
+      <h4>Reviving Retro PCs</h4>
+      
+      <p>What happens when old PCs are given modern upgrades?</p>
+    </div>
+  </article>
+  <article class="f-grid list-grid item2">
+    <img src="./assets/images/image-top-laptops.jpg" alt="">
+    <div class="description">
+      <h2>02</h2>
+      <h4>Top 10 Laptops of 2022</h4>
+      <p>Our best picks for various needs and budgets.</p>
+  </div>
+  </article>
+  <article class="f-grid list-grid item3">
+    <img src="./assets/images/image-gaming-growth.jpg" alt="">
+    <div class="description">
+      <h2>03</h2>
+      <h4>The Growth of Gaming</h4>
+      <p>How the pandemic has sparked fresh opportunities.</p>
+    </div>  
+  </article>
+  </main>
+  <script>
+    function openNav() {
+      document.getElementById("nav-menu").style.visibility = "visible";
+      document.getElementById("nav-menu").style.opacity = 1;
+      document.getElementById("nav-menu").style.background = "white";
+      document.getElementById("nav-menu").style.right = "-20px"
+      document.getElementById("closebtn").style.visibility = "visible";
+    }
+    
+    function closeNav() {
+      document.getElementById("nav-menu").style.visibility = "hidden";
+      document.getElementById("closebtn").style.visibility = "hidden";
+    }
+    </script>
+</body>
+</html>
